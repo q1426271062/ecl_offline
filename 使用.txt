@@ -1,7 +1,7 @@
 1.将 python tools 里面 px4csv2txt.py 工具粘贴到 data 对应数据（20201019）文件夹下， 
    ulog2csv 123.ulg
-   python px4_csv2txt.py -i 123 -o  ./test/（或者../data/20201019/test/，若px4csv2txt.py文件不在data下而在python tool文件夹下打开终端，则需要完整目录）  
-   要将生成的txt文件放在与c++ myekf2一样的目录./data/test/下 
+   python px4_csv2txt.py -i 123 -o  ./test/（若px4csv2txt.py文件不在data下而在python tool文件夹下打开终端，则需要 完整目录../data/20201019/test/）  
+   要将生成的 数据.txt 文件放在与c++ myekf2读取行 一样的目录./data/test/下 
    若显示syntaxerror：missing .....是python版本问题  python3 ？
 2.编译
 cd EKF
@@ -9,6 +9,13 @@ mkdir build/
 cd build/
 cmake ..
 make
+
 cd ..
-./build/myekf2
+./build/myekf2（未成功）
+
+make完在/build下
+./myekf2 成功
+
 注意 文件目录在qt打开myekf2.cpp 63行
+3.画图 python_tools目录下
+python ecl_offline_plot.py ../data/test/
