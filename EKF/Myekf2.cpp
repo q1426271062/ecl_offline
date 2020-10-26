@@ -60,18 +60,18 @@ void Ekf2::print_status()
 
 void Ekf2::task_main()
 {
-    std::ifstream imuread("../data/test/imu.txt");
-    std::ifstream gpsread("../data/test/gps.txt");
-    std::ifstream magread("../data/test/mag.txt");
-    std::ifstream airread("../data/test/baro.txt");
-    std::ifstream evqread("../data/test/vision_att.txt");
-    std::ifstream evpread("../data/test/vision_pos.txt");
-    std::ofstream vehicle_attitude_out("../data/test/vechile_attitude.txt");
-    std::ofstream vehicle_local_out("../data/test/vechile_local_position.txt");
-    std::ofstream vehicle_global_out("../data/test/vechile_global_position.txt");
-    std::ofstream sensor_bias_out("../data/test/sensor_bias.txt");
-    std::ofstream estimate_status_out("../data/test/estimate_status.txt");
-    std::ofstream ekf_innovations_out("../data/test/ekf_innovations.txt");
+    std::ifstream imuread("../../data/test/imu.txt");
+    std::ifstream gpsread("../../data/test/gps.txt");
+    std::ifstream magread("../../data/test/mag.txt");
+    std::ifstream airread("../../data/test/baro.txt");
+    std::ifstream evqread("../../data/test/vision_att.txt");
+    std::ifstream evpread("../../data/test/vision_pos.txt");
+    std::ofstream vehicle_attitude_out("../../data/test/vechile_attitude.txt");
+    std::ofstream vehicle_local_out("../../data/test/vechile_local_position.txt");
+    std::ofstream vehicle_global_out("../../data/test/vechile_global_position.txt");
+    std::ofstream sensor_bias_out("../../data/test/sensor_bias.txt");
+    std::ofstream estimate_status_out("../../data/test/estimate_status.txt");
+    std::ofstream ekf_innovations_out("../../data/test/ekf_innovations.txt");
 
 	// initialise parameter cache// TODO
 	//updateParams();

@@ -1,0 +1,1 @@
+/usr/bin/c++  -DPOSIX_SHARED -g   CMakeFiles/myekf2.dir/Myekf2.cpp.o  -o myekf2 -Wl,-rpath,/home/mima/ecl_offline/EKF/Build libecl.so 

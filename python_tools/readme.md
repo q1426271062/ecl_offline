@@ -5,9 +5,9 @@
 使用方法，以转换123.ulg文件,输出文件到当前目录的test文件夹下为例
 ```
 ulog2csv 123.ulg
-python px4_csv2txt.py -i 123 -o  ./test/
+python px4_csv2txt.py -i 123 -o  ./test/  注意python3.X可以python  python2.X要python2 px4......
 ```
-需要注意的是 -i 后面跟的是ulog文件的前缀，不但后缀名。
+需要注意的是 -i 后面跟的是ulog文件的前缀，不带后缀名。
 转换成功即可在test文件夹下见到转换成功的文件
 
 ## ecl_offline
